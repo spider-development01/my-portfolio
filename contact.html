@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><img src="logo.svg" alt="" srcset="" width="60px"></li>
+                <input type='checkbox' id='check' />
+                <label for='check' class="open-menu">
+                    <div class="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </label>         
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cartoon.html">About me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <label for='check' class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-container" id="fade-in-element">
+        <div class="form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <span class="heading">Get in touch</span>
+                <input type="hidden" name="access_key" value="bda048fc-71a5-4d57-a377-f7e56f86e860">
+                <input placeholder="Name" type="text" name="name" class="input" required>
+                <input placeholder="Email" id="mail" type="email" name="email" class="input" required>
+                <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message" class="textarea" required></textarea>
+                <button type="submit" class="send-button">Send</button>
+            </form>
+        </div>
+    </div>
+  
+    <div class="fixed-button">
+        <button class="btn">Contact Me</button>
+    </div>
+    <div class="socials">
+        
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+    const element = document.getElementById('fade-in-element');
+    element.style.opacity = 1; // Trigger the fade-in effect
+});
+    </script>
+</body>
+</html>
+
+
+
+
+
